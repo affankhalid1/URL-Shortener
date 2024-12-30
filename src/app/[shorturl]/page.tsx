@@ -2,7 +2,7 @@ import {redirect} from 'next/navigation'
 import { NextResponse } from 'next/server'
 import clientPromise from '@/lib/mongob'
 
-const page = async ({params}:any) => {
+const Page = async ({params}:any) => {
   const shorturl = await params.shorturl
   const client = await clientPromise;
   const db = client.db('bitlinks')
@@ -29,4 +29,4 @@ const page = async ({params}:any) => {
   )
 }
 
-export default page
+export default Page
