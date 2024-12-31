@@ -3,7 +3,6 @@
 import { MongoClient, MongoClientOptions } from 'mongodb'
 
 const uri: string | undefined = process.env.MONGODB_URI
-// const options: MongoClientOptions = {}; // No need for useNewUrlParser
 
 let client: MongoClient;
 let clientPromise: Promise<MongoClient> 
@@ -24,5 +23,4 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 export default clientPromise
-
 
