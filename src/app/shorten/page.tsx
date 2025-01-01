@@ -57,8 +57,8 @@ const Page = () => {
     fetch("/api/generate", requestOptions)
       .then((response) => response.json())
       .then((result) => {
-        
-        setGenerated(`${process.env.NEXT_PUBLIC_HOST}/${shorturl}`)
+
+        setGenerated(`https://url-shortener-2.vercel.app/${shorturl}`)
         seturl("")
         setshorturl("")
         console.log(result)
