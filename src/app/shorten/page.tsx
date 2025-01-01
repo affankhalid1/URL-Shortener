@@ -58,7 +58,7 @@ const Page = () => {
       .then((response) => response.json())
       .then((result) => {
         
-        setGenerated(`${process.env.NEXT_PUBLIC_HOST1}/${shorturl}`)
+        setGenerated(`${process.env.NEXT_PUBLIC_HOST}/${shorturl}`)
         seturl("")
         setshorturl("")
         console.log(result)
